@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Пример с js.do</title>
+
+    <link rel="shortcut icon" href="arrowup.ico" type="image/x-icon" />
+    
+    <!--link rel="shortcut icon" href="favicon1.png" type="image/png" /-->
+</head>
+<body>
+
+    <form id="act" action="">
+        Выберите, хотите ли вы стать программистом:<br />
+
+        <p>
+            <select name="select" onchange="eval(this.value);">
+                <option value="document.getElementById('podumayte').innerHTML='Разбор этого примера поможет вам определиться';">Не знаю</option>
+                <option selected=selected value="">ваш ответ</option>
+                <option value="alert('При желании у вас все получится')">Да</option>
+                <option value="alert('Возможно, что вы найдете себя в другом')">Нет</option>
+               
+            </select>
+        </p>
+
+        <p>
+<div id="podumayte"></div>
+         
+        </p>
+    </form>
+
+
+
+
+
+    <script type="text/javascript" src="jsdo_rus2.js"></script>
+
+<!-- Сделать выражения JavaScript и HTML красного цвета. 
+Добавить, чтобы при наведении на новую кнопку отображалось значение x+t,
+где t - число кликов по другой кнопке -->
+<p style="color: green">
+Вышестоящая запись создана обработкой выражения на языке JavaScript.<br>
+
+Зеленая и нижестоящие записи написаны на языке <b>HTML</b>.<br>
+Вы можете править выражения на JavaScript и HTML в левой части  <a href="https://js.do">страницы js.do</a>
+ <br>и нажимать кнопку "<b>Выполнить выражение</b>" для просмотра итогов в правой части страницы js.do.
+</p>
+<b>Задача 4: Вызвать функцию на языке JAVASCRIPT:</b>
+<input type=button onClick="show_random_number()" value="Создать и вывести случайное число">
+
+
+    <script type="text/javascript" charset="utf-8">
+
+	document.write("<b>Эта строка выведена встроенным скриптом в данном файле</b><br><br>");
+	if(false) alert("Встроенный скрипт")
+
+    </script>
+</body>
+</html>
